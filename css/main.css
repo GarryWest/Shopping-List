@@ -78,6 +78,7 @@ body {
 
 /* Item States */
 .checked-item {
+	border: none;
 	background-color: #9999FF;
 	text-decoration: line-through;
 }
