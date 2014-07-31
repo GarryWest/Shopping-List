@@ -59,7 +59,7 @@ $(document).ready(function(){
     var retVal = false;
     $('.list-input').each(function() {
       var txt = $(this).val();
-      if (txt == my_text)
+      if (txt.toUpperCase() == my_text.toUpperCase())
         retVal = true;
     });
     return retVal;
