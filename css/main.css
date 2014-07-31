@@ -1,0 +1,73 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: gray;
+	width: 100%;
+}
+
+/* Entry Header */
+.titlebar {
+	width: 100%;
+	margin: 1%;
+	text-align: center;
+}
+
+.additem {
+	width: 70%;
+	margin: auto;
+	text-align: center;
+}
+
+.iteminput {
+	width: 70%;
+}
+
+.addbutton {
+	/*padding-left: 5px;*/
+}
+
+.instructions {
+	width: 100%;
+	margin: 1%;
+	text-align: center;
+}
+
+
+/* Entry Lines */
+.entry-lines {
+	width: 70%;
+	margin: auto;
+	text-align: center;
+}
+
+.item-list {
+	/*width: 100%;*/
+}
+
+.list-item {
+	margin: auto;
+	margin-top: 1%;
+	background-color: #9999FF;
+}
+
+.list-input {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: 70%;
+}
+
+/* Page Footer */
+.page-footer {
+	position: absolute;
+	bottom: 5px;
+	width: 100%;
+	text-align: center;
+}
+
+
+/** {
+  outline: red 1px solid;
+}
+*/
