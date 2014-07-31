@@ -1,8 +1,7 @@
 $(document).ready(function(){
 
 /*Initialize*/
-  $(".iteminput").focus();
-  $(".status-text").text("Please enter an item");
+  resetStatus();
   
 /*Add items*/
   $(".addbutton").click (function(){
@@ -18,18 +17,19 @@ $(document).ready(function(){
 /*Remove all items*/
   $(".resetbutton").click (function(){
     $(".list-item").remove();
-    $(".status-text").text("Please enter an item");
-    $(".iteminput").focus();
+    resetStatus();
   });
 
 /*Cross an item off the list*/
   $(document).on('click', ".item-checkbox", function(){
     $(this).parent().children(".list-input").toggleClass("checked-item");
+    resetStatus();
   });
 
 /*Remove one item from the list*/
   $(document).on('click', ".deletebutton", function(){
     $(this).parent().remove();
+    resetStatus();
   });
 
 /*Helper functions*/ 
@@ -51,8 +51,7 @@ $(document).ready(function(){
         }
       }
       else{
-        $(".status-text").text("Please enter an item");
-        $(".iteminput").focus();
+        resetStatus();
       }
   };
 
@@ -64,6 +63,11 @@ $(document).ready(function(){
         retVal = true;
     });
     return retVal;
+  };
+
+  function resetStatus(){
+    $(".status-text").text("Please enter an item");
+    $(".iteminput").focus();
   };
 
   /* Make the item listbox sortable */
