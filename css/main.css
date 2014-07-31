@@ -9,8 +9,10 @@ body {
 
 /* Entry Header */
 .titlebar {
+	background-color: #9999FF;
 	width: 100%;
-	margin: 1%;
+	margin-top: 1%;
+	margin-bottom: 1%;
 	text-align: center;
 }
 
@@ -25,7 +27,13 @@ body {
 }
 
 .addbutton {
-	/*padding-left: 5px;*/
+	border: 1px solid blue;
+}
+
+.btn {
+	border: 1px solid blue; 
+	border-radius: 50%;
+	padding: 1%;
 }
 
 .instructions {
@@ -43,13 +51,14 @@ body {
 }
 
 .item-list {
-	/*width: 100%;*/
+	list-style-type: none;
 }
 
 .list-item {
 	margin: auto;
 	margin-top: 1%;
 	background-color: #9999FF;
+	cursor: pointer;
 }
 
 .list-input {
@@ -60,12 +69,18 @@ body {
 
 /* Page Footer */
 .page-footer {
+	background-color: #9999FF;
 	position: absolute;
 	bottom: 5px;
 	width: 100%;
 	text-align: center;
 }
 
+/* Item States */
+.checked-item {
+	background-color: #9999FF;
+	text-decoration: line-through;
+}
 
 /** {
   outline: red 1px solid;

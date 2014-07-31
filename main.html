@@ -5,6 +5,9 @@
 	<title>Shopping List by Garry West</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/main.css">
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+	<script src="js/app.js"></script>
 </head>
 <body>
 	<div class="entry-header">
@@ -14,18 +17,22 @@
 			<button class="addbutton">Add Item</button>
 		</div>
 		<div class="instructions">
-			<p>Check an item to cross it off the list. Click an item to edit. Drag items to sort the list.  <button>Reset List</button></p>
+			<p><strong>Check an item to cross it off the list. Click an item to edit. Drag items to sort the list. Duplicates will be ignored!</strong><button class="resetbutton btn">Reset List</button></p>
 		</div>
 	</div>
 	<div class="entry-lines">
 		<ul class="item-list">
-			<li class="list-item"><input type="checkbox"><input class="list-input" type="text" value="Apples"><button>Delete</button></li>
-			<li class="list-item"><input type="checkbox"><input class="list-input" type="text" value="Bread"><button>Delete</button></li>
+			<!--
+			<li class="list-item"><input type="checkbox" class="item-checkbox"><input class="list-input" type="text" value="Apples"><button class="deletebutton">Delete</button></li>
+			<li class="list-item"><input type="checkbox" class="item-checkbox"><input class="list-input" type="text" value="Bread"><button class="deletebutton">Delete</button></li>
+			-->
 		</ul>
 	</div>
 	<div class="page-footer">
 		<div class="statusbar">
+			<p class="status-text">
 			Item entered: Apples
+			</p>
 		</div>
 	</div>
 </body>
