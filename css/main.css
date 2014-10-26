@@ -3,16 +3,18 @@
 }
 
 body {
-	background-color: gray;
+	background-color: #669999;
 	width: 100%;
+	font-family: calibri, "Helvetica Neue", Helvetica, Arial, sans-serif
 }
 
 /* Entry Header */
 .titlebar {
-	background-color: #9999FF;
+	/*background-color: #9999FF;
 	width: 100%;
 	margin-top: 1%;
 	margin-bottom: 1%;
+	*/
 	text-align: center;
 }
 
@@ -22,16 +24,11 @@ body {
 	text-align: center;
 }
 
-.iteminput {
-	width: 70%;
-}
-
 .addbutton {
 	border: 1px solid blue;
 }
 
 .btn {
-	border: 1px solid blue; 
 	border-radius: 50%;
 	padding: 1%;
 }
@@ -52,12 +49,12 @@ body {
 
 .item-list {
 	list-style-type: none;
+	padding-left: 0;
 }
 
 .list-item {
-	margin: auto;
 	margin-top: 1%;
-	background-color: #9999FF;
+	/*background-color: #9999FF;*/
 	cursor: pointer;
 }
 
@@ -79,11 +76,23 @@ body {
 /* Item States */
 .checked-item {
 	border: none;
-	background-color: #9999FF;
+	background-color: #A5C0CF;
 	text-decoration: line-through;
 }
 
-/** {
-  outline: red 1px solid;
+h1, h4 {
+	border-radius: 5px;
+	border: #476B6B solid 1px;
 }
-*/
+
+.jumbotron, h1, h3, h4{
+	background-color: #A5C0CF;
+}
+
+.jumbotron, h1, h3, h4, .btn-default, .list-group {
+	border: #476B6B solid 5px;
+}
+
+.jumbotron {
+	margin-bottom: 0px;
+}

@@ -3,37 +3,48 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Shopping List by Garry West</title>
-	<link rel="stylesheet" href="css/reset.css">
+	<!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<h1 class="titlebar">&nbsp;Shopping List by Garry West</h1>
+		</div>
+		<div class="row">
+			<div class="additem">
+				<input type="text" placeholder="enter item here" class="iteminput additem"><button class="addbutton btn btn-default" >Add Item</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="instructions">
+				<p><strong>Check an item to cross it off the list. Click an item to edit. Drag items to sort the list. Duplicates will be ignored!</strong>
+				<button class="resetbutton btn btn-default">Reset List</button></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="entry-lines">
+				<ul class="item-list">
+					<!--
+					<li class="list-item"><input type="checkbox" class="item-checkbox"><input class="list-input" type="text" value="Apples"><button class="deletebutton">Delete</button></li>
+					<li class="list-item"><input type="checkbox" class="item-checkbox"><input class="list-input" type="text" value="Bread"><button class="deletebutton">Delete</button></li>
+					-->
+				</ul>
+			</div>
+		</div>
+		<div class="row">			
+			<div class="jumbotron">
+				<div class="statusbar">
+					<p class="status-text">
+					Item entered: Apples
+					</p>
+				</div>
+			</div>
+		</div>
+	</div><!-- end of container -->
 	<script src="http://code.jquery.com/jquery.min.js"></script>
 	<script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
 	<script src="js/app.js"></script>
-</head>
-<body>
-	<div class="entry-header">
-		<p class="titlebar">Shopping List by Garry West</p>
-		<div class="additem">
-			<input type="text" placeholder="enter item here" class="iteminput">
-			<button class="addbutton">Add Item</button>
-		</div>
-		<div class="instructions">
-			<p><strong>Check an item to cross it off the list. Click an item to edit. Drag items to sort the list. Duplicates will be ignored!</strong><button class="resetbutton btn">Reset List</button></p>
-		</div>
-	</div>
-	<div class="entry-lines">
-		<ul class="item-list">
-			<!--
-			<li class="list-item"><input type="checkbox" class="item-checkbox"><input class="list-input" type="text" value="Apples"><button class="deletebutton">Delete</button></li>
-			<li class="list-item"><input type="checkbox" class="item-checkbox"><input class="list-input" type="text" value="Bread"><button class="deletebutton">Delete</button></li>
-			-->
-		</ul>
-	</div>
-	<div class="page-footer">
-		<div class="statusbar">
-			<p class="status-text">
-			Item entered: Apples
-			</p>
-		</div>
-	</div>
 </body>
 </html>
